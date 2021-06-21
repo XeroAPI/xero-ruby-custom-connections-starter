@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %title xero-ruby SDK
+    %link(rel="stylesheet" href="/css/styles.css")
+  %body
+    #wrapper
+      .header
+        %a{href: "/"}
+          %img#logo{:src => "/images/xd.svg"}
+ 
+      .flex-container
+        .main
+          = yield
+        %nav.sidebar-nav
+          %ul
+            %li
+              %h1 Authentication
+            %li.links
+              %a{:href => "/refresh-token"} Refresh Token
+          %ul
+            %li
+              %h1 Accounting API
+            %li.links
+              %a{:href => "/invoices"} Get Invoices
+            %li.links
+              %a{:href => "/contacts"} Get contacts
