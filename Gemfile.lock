@@ -16,18 +16,10 @@ GIT
       sinatra (= 2.1.0)
       tilt (~> 2.0)
 
-PATH
-  remote: /Users/chris.knight/code/sdks/xero-ruby
-  specs:
-    xero-ruby (3.1.2)
-      faraday (~> 1.0, >= 1.0.1)
-      json (~> 2.1, >= 2.1.0)
-      json-jwt (~> 1.5, >= 1.5.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.1.3.2)
+    activesupport (6.1.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -35,7 +27,7 @@ GEM
       zeitwerk (~> 2.3)
     aes_key_wrap (1.1.0)
     bindata (2.4.10)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.9)
     dotenv (2.7.6)
     faraday (1.3.0)
       faraday-net_http (~> 1.0)
@@ -64,6 +56,10 @@ GEM
     tilt (2.0.10)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    xero-ruby (3.2.0)
+      faraday (~> 1.0, >= 1.0.1)
+      json (~> 2.1, >= 2.1.0)
+      json-jwt (~> 1.5, >= 1.5.2)
     zeitwerk (2.4.2)
 
 PLATFORMS
@@ -75,7 +71,7 @@ DEPENDENCIES
   jwt
   sinatra!
   sinatra-contrib
-  xero-ruby!
+  xero-ruby
 
 BUNDLED WITH
    2.1.4
