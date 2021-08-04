@@ -78,3 +78,18 @@ get '/contacts' do
   @contacts = xero_client.accounting_api.get_contacts('').contacts
   haml :contacts
 end
+
+
+get '/subscriptions' do
+  creds = {
+    client_id: ENV['APPSTORE_CLIENT_ID'],
+    client_secret: ENV['APPSTORE_CLIENT_SECRET'],
+    grant_type: 'client_credentials',
+    scopes: ['marketplace.billing']
+  }
+  xero_app_store_client = XeroRuby::ApiClient.new(credentials: creds)
+  xero_app_store_client.get_client_credentials_token
+
+  @subscription = xero_app_store_client.app_store_api.get_subscription("03bc74f2-1237-4477-b782-2dfb1a6d8b21")
+  haml :subscription
+end
