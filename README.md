@@ -24,8 +24,8 @@ ruby 2.7.0
 
 ### 3) Clone app and rename `sample.env` to `.env` and replace with the required parameters
 ```bash
-$ git clone git@github.com:XeroAPI/xero-ruby-oauth2-starter.git
-$ cd xero-ruby-oauth2-starter/
+$ git clone git@github.com:XeroAPI/xero-ruby-custom-connections-starter.git
+$ cd xero-ruby-custom-connections-starter/
 $ mv sample.env .env
 ```
 Replace `CLIENT_ID`, `CLIENT_SECRET` with your unique parameters
